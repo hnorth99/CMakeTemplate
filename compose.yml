@@ -1,0 +1,7 @@
+services:
+  cmaketemplate:
+    build: .
+    volumes:
+      # These are to allow developers to use git from within the running container
+      - "~/.gitconfig:/etc/gitconfig"
+      - "~/.ssh:/root/.ssh"
