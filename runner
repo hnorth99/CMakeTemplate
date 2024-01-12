@@ -21,7 +21,7 @@ case $MODE in
     echo ""
     echo "bash runner [mode]"
     echo "[mode]"
-    echo "  rel - build yot project for release"
-    echo "  tst - build and test yot project in debug"
+    echo "  rel - build cmaketemplate project for release"
+    echo "  tst - build and test cmaketemplate project in debug"
     echo ""
 esac

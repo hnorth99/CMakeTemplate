@@ -5,7 +5,7 @@ This repository is designed to be run from within a custom docker image, which m
 1. Clone this repo to your local:
 
    ```
-   git clone git@github.com:hnorth99/Yot.git && cd Yot
+   git clone git@github.com:hnorth99/Yot.git && cd cmaketemplate
    ```
 2. Execute the docker build and enter the container via bash shell:
 
