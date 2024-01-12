@@ -2,7 +2,7 @@
 #include <gtest/gtest.h>
 
 TEST(CarTest, InitializesNotCrashed) {
-  CMakeTemplateExample::Car test_car;
+  const CMakeTemplateExample::Car test_car;
   ASSERT_FALSE(test_car.IsCrashed());
 }
 

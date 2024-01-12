@@ -2,16 +2,10 @@
 
 namespace CMakeTemplateExample {
 
-void Car::Crash() {
-  isCrashed_ = true;
-}
+void Car::Crash() { isCrashed_ = true; }
 
-void Car::Repair() {
-  isCrashed_ = false;
-}
+void Car::Repair() { isCrashed_ = false; }
 
-bool Car::IsCrashed() const {
-  return isCrashed_;
-}
+bool Car::IsCrashed() const { return isCrashed_; }
 
-}  // namespace CMakeTemplateExample
+} // namespace CMakeTemplateExample

@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+MODE=$1
+
+case $MODE in
+  rel)
+    echo "Executing a build for release"
+    rm -rf build/release
+    cmake -B build/release -S . -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_COMPILER=clang++
+    cd build/release || exit
+    make all
+    ;;
+  deb)
+    echo "Executing a build for debug/test mode"
+    rm -rf build/debug
+    cmake -B build/debug -S . -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=clang++
+    cd build/debug || exit
+    make all
+    ;;
+  *)
+    echo "Unknown or empty build-mode: $MODE"
+    echo ""
+    echo "bash runner [mode]"
+    echo "[mode]"
+    echo "  rel - build yot project for release"
+    echo "  tst - build and test yot project in debug"
+    echo ""
+esac

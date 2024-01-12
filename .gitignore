@@ -63,4 +63,3 @@ _deps
 
 # Ignore the build directories generated from cmake
 build/*
-CMakeTemplate/build/*
